@@ -1,0 +1,34 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 40px 120px;
+}
+.nav__logo {
+    width: 110px;
+    height: 22px;
+}
+.nav__list {
+    display: grid;
+    grid-gap: 12px 24px;
+    grid-template-columns: repeat(4, max-content);
+    list-style-type: none;
+    padding: 0;
+}
+.nav__item {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.nav__link {
+    color: var(--primary);
+    text-decoration: none;
+}
+.nav__link:hover {
+    color: var(--accent);
+}
+.nav__link:active {
+    color: #a0fff2;
+}
