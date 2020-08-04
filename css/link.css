@@ -1,5 +1,5 @@
-
 .link {
+    cursor: pointer;
     padding: 18px 52px;
     font-family: var(--eventFont);
     font-size: 14px;
@@ -12,6 +12,7 @@
     margin: 10px;
     transition: 0.3s;
 }
+
 .link:hover {
     background-color: #19baa4;
 }
