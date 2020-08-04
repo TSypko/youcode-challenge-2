@@ -1,0 +1,80 @@
+.hero {
+    background-image: url(../img/speaker-gary-vee-2c.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero__container {
+    background: rgba(5, 0, 62, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero__name {
+    color: var(--accent);
+    font-family: var(--headerFont);
+    font-size: 200px;
+    font-weight: 700;
+    margin-bottom: -100px;
+}
+
+.hero__headerWrapper {
+    position: relative;
+}
+
+.hero__header {
+    color: var(--primary);
+    font-family: var(--headerFont);
+    font-size: 100px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.hero__image {
+    height: 60px;
+    position: absolute;
+    top: 72%;
+    left: 72%;
+}
+
+.hero__date {
+    color: var(--primary);
+    font-family: var(--subHeaderFont);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.hero__subHeader {
+    color: var(--primary);
+    font-family: var(--subHeaderFont);
+    font-size: 18px;
+    font-weight: 300;
+    margin: 10px;
+}
+
+.hero__link {
+    padding: 18px 52px;
+    font-family: var(--eventFont);
+    font-size: 14px;
+    font-weight: 700;
+    background-color: var(--accent);
+    border: none;
+    color: var(--primary);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.hero__link:hover {
+    background-color: #19baa4;
+}
