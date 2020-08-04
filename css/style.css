@@ -1,0 +1,23 @@
+html {
+    box-sizing: border-box;
+    --primary: #ffffff;
+    --secondary: #05003E;
+    --accent: #1FE8CD;
+    --textSecondary: #EAEAED;
+    --backgroundSecondary: #F7F7F7;
+    --primaryFont: "Open Sans", sans-serif;
+    --headerFont: 'Bebas Neue', cursive;
+    --subHeaderFont: 'Roboto', sans-serif;
+    --eventFont: 'Montserrat', sans-serif;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary);
+    font-family: var(--primaryFont);
+    color: var(--secondary);
+}
