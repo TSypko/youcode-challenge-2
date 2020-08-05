@@ -1,12 +1,16 @@
 .hero {
+    /* display: none; */
     background-image: url(../img/speaker-gary-vee-2c.jpg);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
+
 }
 
 .hero__container {
+    position: relative;
     background: rgba(5, 0, 62, 0.7);
     display: flex;
     flex-direction: column;
@@ -23,7 +27,7 @@
     font-family: var(--headerFont);
     font-size: 200px;
     font-weight: 700;
-    margin-bottom: -100px;
+    margin: -100px 0px;
 }
 
 .hero__headerWrapper {
