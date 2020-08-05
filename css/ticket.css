@@ -1,15 +1,17 @@
 .ticket {
     background-color: var(--backgroundSecondary);
     z-index: -1;
+    margin: 0 auto;
+    padding: 30px;
 }
 
 .ticket__container {
-    margin: 0 auto;
+
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
     max-width: 1200px;
-    padding: 50px;
+
 }
 
 .ticket__content {
