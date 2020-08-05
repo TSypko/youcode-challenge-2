@@ -50,29 +50,15 @@
     transform: translateY(16px);
 }
 
-.mobileMenu_open .mobileMenu__burger {
+.mobileMenu--open .mobileMenu__burger {
     transform: translateX(-100px);
     background-color: transparent;
 }
 
-.mobileMenu_open .mobileMenu__burger::before {
+.mobileMenu--open .mobileMenu__burger::before {
     transform: rotate(45deg) translate(72px, -72px);
 }
 
-.mobileMenu_open .mobileMenu__burger::after {
+.mobileMenu--open .mobileMenu__burger::after {
     transform: rotate(-45deg) translate(72px, 72px);
-}
-
-.menu {
-    list-style: none;
-    display: flex;
-    background: #ccc;
-}
-
-.navigation__menu {
-    visibility: hidden;
-}
-
-.navigation__menu_open {
-    visibility: visible;
 }

@@ -9,7 +9,7 @@
     const toggleMobileMenu = () => {
         const menu = document.querySelector(".js-nav__list");
         const isOpened = hamburger.getAttribute("aria-expanded") === "true";
-        hamburger.classList.toggle("mobileMenu_open", !isOpened);
+        hamburger.classList.toggle("mobileMenu--open", !isOpened);
         hamburger.setAttribute("aria-expanded", String(!isOpened));
         menu.classList.toggle("nav__list--open", !isOpened);
     };
