@@ -1,16 +1,18 @@
 .nav {
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
-    padding: 20px 180px;
-    background-color: var(--overlay);
+    padding: 50px 180px;
     position: fixed;
     z-index: 1;
+    transition: 0.3s;
 }
-
+.nav--onScroll {
+    background-color: var(--overlay);
+    padding: 20px 180px;
+}
 @media (max-width: 990px) {
     .nav {
         padding: 20px 50px;
