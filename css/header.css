@@ -40,6 +40,11 @@
     content: "newsletter";
 }
 
+.header--clean {
+    margin: 20px 0px;
+    content: ""
+}
+
 .header--clean::before {
     content: ""
 }
