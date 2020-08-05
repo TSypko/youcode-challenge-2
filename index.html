@@ -36,14 +36,14 @@
 <body>
 
   <nav class="nav">
-    <a class="nav__link" href="#">
+    <a class="nav__link" href="#hero">
       <img class="nav__logo" src="img/Rectangle-3-copy.png" alt="Kallyas logo">
     </a>
     <ul class="nav__list">
-      <li class="nav__item"><a class="nav__link" href="#">about event</a></li>
-      <li class="nav__item"><a class="nav__link" href="#">speakers</a></li>
-      <li class="nav__item"><a class="nav__link" href="#">ticket</a></li>
-      <li class="nav__item"><a class="nav__link" href="#">newsletter</a></li>
+      <li class="nav__item"><a class="nav__link" href="#about">about event</a></li>
+      <li class="nav__item"><a class="nav__link" href="#speakers">speakers</a></li>
+      <li class="nav__item"><a class="nav__link" href="#ticket">ticket</a></li>
+      <li class="nav__item"><a class="nav__link" href="#newsletter">newsletter</a></li>
     </ul>
     <button class="navigation__menu-toggler mobileMenu" aria-expanded="false">
       <span class="mobileMenu__label">Open/close menu</span>
@@ -52,7 +52,7 @@
   </nav>
 
   <main>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="hero__container">
         <p class="hero__name">10x</p>
         <div class="hero__headerWrapper">
@@ -64,30 +64,30 @@
         <a class="link" href="#">get your tickets</a>
       </div>
     </section>
-      <section class="counter">
-        <p class="counter__paragraph">event starts in:</p>
-        <div class="counter__itemsWrapper">
-          <ul class="counter__items">
-            <li class="counter__item">
-              <span class="counter__number">215</span>
-              <span class="counter__caption">days</span>
-            </li>
-            <li class="counter__item">
-              <span class="counter__number">2</span>
-              <span class="counter__caption">hours</span>
-            </li>
-            <li class="counter__item">
-              <span class="counter__number">50</span>
-              <span class="counter__caption">min</span>
-            </li>
-            <li class="counter__item">
-              <span class="counter__number">7</span>
-              <span class="counter__caption">sec</span>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="about">
+    <section class="counter">
+      <p class="counter__paragraph">event starts in:</p>
+      <div class="counter__itemsWrapper">
+        <ul class="counter__items">
+          <li class="counter__item">
+            <span class="counter__number">215</span>
+            <span class="counter__caption">days</span>
+          </li>
+          <li class="counter__item">
+            <span class="counter__number">2</span>
+            <span class="counter__caption">hours</span>
+          </li>
+          <li class="counter__item">
+            <span class="counter__number">50</span>
+            <span class="counter__caption">min</span>
+          </li>
+          <li class="counter__item">
+            <span class="counter__number">7</span>
+            <span class="counter__caption">sec</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="about" id="about">
       <div class="about__content">
         <h3 class="header header--about">about event</h3>
         <p class="about__paragraph">Staying in shape is one thing, but optimizing your workout for maximum
@@ -103,7 +103,7 @@
       </div>
       <div class="about__image"></div>
     </section>
-    <section class="speakers">
+    <section class="speakers" id="speakers">
       <div class="speakers__textContent">
         <h3 class="header header--speakers">speakers</h3>
         <p class="speakers__parapgraph">Maecenas ornare nisl non maximus feugiat. Vivamus et ligula imperdiet,
@@ -123,7 +123,7 @@
         <p class="speakers__speakerOccupation">CEO & BA at Envato</p>
       </div>
     </section>
-    <section class="ticket">
+    <section class="ticket" id="ticket">
       <div class="ticket__container">
         <div class="ticket__content">
           <h3 class="header header--ticket">ticket<h3>
@@ -167,7 +167,7 @@
         </div>
       </div>
     </section>
-    <footer class="newsletter">
+    <footer class="newsletter" id="newsletter">
       <h3 class="header header--newsletter">newsletter</h3>
       <p class="newsletter__parapgraph">Subscribe to the newsletter to receive the latest informations and news about
         Kallyas Business Conference.</p>
