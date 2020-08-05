@@ -13,6 +13,7 @@
 .nav--onScroll {
     background-color: var(--overlay);
     padding: 20px 180px;
+    z-index: 2;
 }
 
 @media (max-width: 990px) {
@@ -58,6 +59,12 @@
         pointer-events: none;
         line-height: 2;
         transform: translateX(50%);
+    }
+}
+
+@media (max-width: 460px) {
+    .nav__list {
+        width: 90%;
     }
 }
 
