@@ -1,21 +1,31 @@
 .ticket {
     background-color: var(--backgroundSecondary);
-    z-index: -1;
-    margin: 0 auto;
-    padding: 30px;
+    padding: 30px 30px;
 }
 
 .ticket__container {
-
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
     max-width: 1200px;
+}
 
+@media (max-width: 600px) {
+    .ticket__container {
+        grid-template-columns: auto;
+    }
 }
 
 .ticket__content {
     width: 70%;
+}
+
+@media (max-width: 600px) {
+    .ticket__content {
+        text-align: center;
+        width: 100%;
+    }
 }
 
 .ticket__parapgraph {
@@ -38,6 +48,12 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+}
+
+@media (max-width: 420px) {
+    .ticket__counterValues {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .ticket__counterValue {

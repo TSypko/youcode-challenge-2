@@ -22,6 +22,12 @@
     overflow-x: hidden;
 }
 
+@media (max-width: 767px) {
+    .speakers__textContent {
+        align-items: center;
+    }
+}
+
 .speakers__parapgraph {
     color: var(--primary);
     text-align: right;
@@ -30,6 +36,13 @@
     line-height: 2;
     font-weight: 300;
     margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+    .speakers__parapgraph {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .speakers__link {

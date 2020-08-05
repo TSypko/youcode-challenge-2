@@ -20,8 +20,21 @@
     z-index: -1;
 }
 
+@media (max-width: 460px) {
+    .header::before {
+        font-size: 52px;
+    }
+}
+
 .header--about::before {
     content: "about";
+}
+
+@media (max-width: 460px) {
+    .header--about::before, .header--ticket::before {
+        top: -50%;
+        left: 15%;
+    }
 }
 
 .header--speakers::before {
@@ -32,6 +45,14 @@
     font-size: 98px;
 }
 
+@media (max-width: 460px) {
+    .header--speakers::before {
+        top: -90%;
+        left: -80%;
+        font-size: 60px;
+    }
+}
+
 .header--ticket::before {
     content: "ticket";
 }
@@ -40,6 +61,14 @@
     content: "newsletter";
     top: -110%;
     left: -100%;
+}
+
+@media (max-width: 460px) {
+    .header--newsletter::before {
+        top: -50%;
+        left: -45%;
+        font-size: 45px;
+    }
 }
 
 .header--clean {

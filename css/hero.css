@@ -1,5 +1,4 @@
 .hero {
-    /* display: none; */
     background-image: url(../img/speaker-gary-vee-2c.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -19,6 +18,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    text-align: center;
 }
 
 .hero__name {
@@ -27,6 +27,13 @@
     font-size: 200px;
     font-weight: 700;
     margin: -100px 0px;
+}
+
+@media (max-width: 460px) {
+    .hero__name {
+        font-size: 126px;
+        margin: -50px 0px;
+    }
 }
 
 .hero__headerWrapper {
@@ -41,11 +48,47 @@
     margin-bottom: 0px;
 }
 
+@media (max-width: 767px) {
+    .hero__header {
+        font-size: 76px;
+    }
+}
+
 .hero__image {
     height: 60px;
     position: absolute;
     top: 72%;
     left: 72%;
+}
+
+@media (max-width: 768px) {
+    .hero__image {
+        height: 55px;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero__image {
+        height: 45px;
+        top: 76%;
+        left: 32%;
+    }
+}
+
+@media (max-width: 515px) {
+    .hero__image {
+        height: 45px;
+        top: 82%;
+        left: 25%;
+    }
+}
+
+@media (max-width: 320px) {
+    .hero__image {
+        height: 45px;
+        top: 82%;
+        left: 22%;
+    }
 }
 
 .hero__date {

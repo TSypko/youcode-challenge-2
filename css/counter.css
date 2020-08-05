@@ -5,7 +5,6 @@
     width: 70%;
     background-color: var(--accent);
     color: var(--primary);
-    padding: 0;
 }
 
 .counter__paragraph {
@@ -26,11 +25,26 @@
     text-transform: uppercase;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    align-content: center;
-    justify-items: center;
+    align-items: center;
+    justify-content: center;
     grid-gap: 30px;
     padding-left: 0;
     padding-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .counter__items {
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width: 460px) {
+    .counter__items {
+        width: 90%;
+        grid-gap: 10px;
+    }
 }
 
 .counter__item {
@@ -46,8 +60,15 @@
     font-weight: 700;
 }
 
+@media (max-width: 460px) {
+    .counter__number {
+        font-size: 24px;
+        padding: 15px;
+    }
+}
+
 .counter__caption {
     text-align: center;
     font-size: 14px;
-    padding: 10px;
+    padding: 0px 10px;
 }
