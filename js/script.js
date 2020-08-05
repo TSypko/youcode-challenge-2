@@ -12,7 +12,6 @@
         hamburger.classList.toggle("mobileMenu_open", !isOpened);
         hamburger.setAttribute("aria-expanded", String(!isOpened));
         menu.classList.toggle("nav__list--open", !isOpened);
-        const navItem = document.querySelectorAll(".nav__link");
     };
 
     const mainCounter = document.querySelector(".js-counter");
