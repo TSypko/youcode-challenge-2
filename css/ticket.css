@@ -11,15 +11,18 @@
     max-width: 1200px;
     padding: 50px;
 }
+
 .ticket__content {
     width: 70%;
 }
+
 .ticket__parapgraph {
     font-size: 18px;
     line-height: 2;
     font-weight: 300;
     margin-bottom: 40px;
 }
+
 .ticket__counterParapgraph {
     color: var(--accent);
     font-size: 14px;
@@ -34,6 +37,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
 }
+
 .ticket__counterValue {
     display: flex;
     flex-direction: column;
@@ -43,17 +47,18 @@
     color: var(--primary);
     padding: 10px 5px;
 }
+
 .ticket__counterNumber {
     margin: 10px 0;
     font-size: 48px;
 }
+
 .ticket__counterCaption {
     margin: 10px 0;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 400;
 }
-
 
 .ticket__card {
     display: flex;
