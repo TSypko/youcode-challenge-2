@@ -9,10 +9,12 @@
     z-index: 1;
     transition: 0.3s;
 }
+
 .nav--onScroll {
     background-color: var(--overlay);
     padding: 20px 180px;
 }
+
 @media (max-width: 990px) {
     .nav {
         padding: 20px 50px;
