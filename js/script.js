@@ -4,10 +4,10 @@
         console.log("Pozdrawiam społeczność YouCode :)");
     }
 
-    const hamburger = document.querySelector(".mobileMenu");
+    const hamburger = document.querySelector(".js-mobileMenu");
 
     const hamburgerTransform = () => {
-        const menu = document.querySelector(".nav__list");
+        const menu = document.querySelector(".js-nav__list");
         const isOpened = hamburger.getAttribute("aria-expanded") === "true";
         hamburger.classList.toggle("mobileMenu_open", !isOpened);
         hamburger.setAttribute("aria-expanded", String(!isOpened));
@@ -95,7 +95,7 @@
 
 
     const onScrollNavStyleChange = () => {
-        const header = document.querySelector(".nav")
+        const header = document.querySelector(".js-nav")
         const navPosition = header.offsetTop;
         if (window.pageYOffset > navPosition) {
             header.classList.add("nav--onScroll");
