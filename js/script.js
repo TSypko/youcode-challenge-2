@@ -6,12 +6,13 @@
 
     const hamburger = document.querySelector(".js-mobileMenu");
 
-    const hamburgerTransform = () => {
+    const toggleMobileMenu = () => {
         const menu = document.querySelector(".js-nav__list");
         const isOpened = hamburger.getAttribute("aria-expanded") === "true";
         hamburger.classList.toggle("mobileMenu_open", !isOpened);
         hamburger.setAttribute("aria-expanded", String(!isOpened));
         menu.classList.toggle("nav__list--open", !isOpened);
+        const navItem = document.querySelectorAll(".nav__link");
     };
 
     const mainCounter = document.querySelector(".js-counter");
@@ -109,7 +110,7 @@
         welcomeMessage();
         onScrollNavStyleChange();
         countDownInterval();
-        hamburger.addEventListener('click', hamburgerTransform);
+        hamburger.addEventListener('click', toggleMobileMenu);
     }
     init();
 };
