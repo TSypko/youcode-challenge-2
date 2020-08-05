@@ -6,7 +6,13 @@
     width: 100%;
 }
 
-.speakers__header {
+@media (max-width: 767px) {
+    .speakers {
+        grid-template-columns: auto;
+    }
+}
+
+/* .speakers__header {
     text-transform: uppercase;
     font-size: 24px;
     margin: 50px 50px;
@@ -25,7 +31,7 @@
     font-size: 98px;
     z-index: -1;
     color: #07184D;
-}
+} */
 
 .speakers__textContent {
     display: flex;
@@ -64,6 +70,12 @@
     align-items: stretch;
     height: 100%;
     padding: 30px;
+}
+
+@media (max-width: 767px) {
+    .speakers__photo {
+        min-height: 400px;
+    }
 }
 
 .speakers__photo--one {
