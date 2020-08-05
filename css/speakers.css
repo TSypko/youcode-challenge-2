@@ -85,7 +85,7 @@
 
 .speakers__photo::after {
     content: "";
-    background: rgba(5, 0, 62, 0.7);
+    background: var(--overlay);
     position: absolute;
     top: 0;
     left: 0;

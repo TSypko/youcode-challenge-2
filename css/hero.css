@@ -9,7 +9,7 @@
 
 .hero__container {
     position: relative;
-    background: rgba(5, 0, 62, 0.7);
+    background: var(--overlay);
     display: flex;
     flex-direction: column;
     justify-content: center;

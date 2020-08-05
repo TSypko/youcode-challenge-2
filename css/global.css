@@ -5,6 +5,7 @@ html {
     --accent: #1FE8CD;
     --textSecondary: #d9d9d9;
     --backgroundSecondary: #e7e7e7;
+    --overlay: rgba(5, 0, 62, 0.7);
     --primaryFont: "Open Sans", sans-serif;
     --headerFont: 'Bebas Neue', cursive;
     --subHeaderFont: 'Roboto', sans-serif;
