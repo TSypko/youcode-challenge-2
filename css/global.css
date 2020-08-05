@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+    --primary: #ffffff;
+    --secondary: #05003E;
+    --accent: #1FE8CD;
+    --textSecondary: #dbdbdb;
+    --backgroundSecondary: #ececec;
+    --primaryFont: "Open Sans", sans-serif;
+    --headerFont: 'Bebas Neue', cursive;
+    --subHeaderFont: 'Roboto', sans-serif;
+    --eventFont: 'Montserrat', sans-serif;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    font-family: var(--primaryFont);
+    color: var(--secondary);
+}
+
+.link {
+    cursor: pointer;
+    padding: 18px 52px;
+    font-family: var(--eventFont);
+    font-size: 14px;
+    font-weight: 700;
+    background-color: var(--accent);
+    border: none;
+    color: var(--primary);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 10px 0px;
+    transition: 0.3s;
+}
+
+.link--lighter {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.link:hover {
+    background-color: #19baa4;
+}
