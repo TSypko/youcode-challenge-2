@@ -72,15 +72,15 @@
 }
 
 .speakers__photo--one {
-    background-image: url(/img/speaker_1.jpg);
+    background-image: url(../img/speaker_1.jpg);
 }
 
 .speakers__photo--two {
-    background-image: url(/img/speaker_2.jpg);
+    background-image: url(../img/speaker_2.jpg);
 }
 
 .speakers__photo--three {
-    background-image: url(/img/speaker_3.jpg);
+    background-image: url(../img/speaker_3.jpg);
 }
 
 .speakers__photo::after {
