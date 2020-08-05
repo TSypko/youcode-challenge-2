@@ -38,6 +38,8 @@
 
 .header--newsletter::before {
     content: "newsletter";
+    top: -110%;
+    left: -100%;
 }
 
 .header--clean {
