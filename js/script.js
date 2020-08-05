@@ -5,6 +5,7 @@
     }
 
     const hamburger = document.querySelector(".js-mobileMenu");
+    const navItem = document.querySelectorAll(".nav__link");
 
     const toggleMobileMenu = () => {
         const menu = document.querySelector(".js-nav__list");
@@ -68,7 +69,6 @@
     };
 
     const renderExpiredCounter = () => {
-
         mainCounter.innerHTML =
             `
         <li class="ticket__counterValue">
@@ -93,7 +93,6 @@
         }, 1000);
     };
 
-
     const onScrollNavStyleChange = () => {
         const header = document.querySelector(".js-nav")
         const navPosition = header.offsetTop;
@@ -103,13 +102,16 @@
             header.classList.remove("nav--onScroll");
         }
         window.onscroll = onScrollNavStyleChange;
-    }
+    };
 
     const init = () => {
         welcomeMessage();
         onScrollNavStyleChange();
         countDownInterval();
         hamburger.addEventListener('click', toggleMobileMenu);
-    }
+        navItem.forEach(
+            (item) => item.addEventListener("click", toggleMobileMenu)
+        );
+    };
     init();
 };
