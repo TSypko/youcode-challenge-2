@@ -17,6 +17,9 @@
     font-size: 12px;
     font-weight: 400;
 }
+.link--borderRadius {
+    border-radius: 3px;
+}
 .link:hover {
     background-color: #19baa4;
 }
