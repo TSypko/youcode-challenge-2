@@ -22,11 +22,46 @@
     grid-template-columns: repeat(4, max-content);
     list-style-type: none;
     padding: 0;
+    transition: 0.5s;
+    transition-property: opacity, transform;
+}
+
+@media (max-width: 990px) {
+    .nav__list {
+        position: fixed;
+        top: 50px;
+        right: 0px;
+        width: 50%;
+        padding: 20px;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        line-height: 2;
+        transform: translateX(50%);
+    }
+}
+
+@media (max-width: 990px) {
+    .nav__list--open {
+        opacity: 1;
+        pointer-events: unset;
+        transform: unset;
+    }
 }
 
 .nav__item {
     font-size: 13px;
     text-transform: uppercase;
+}
+
+@media (max-width: 990px) {
+    .nav__item {
+        font-size: 26px;
+    }
 }
 
 .nav__link {

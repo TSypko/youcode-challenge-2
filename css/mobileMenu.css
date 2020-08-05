@@ -1,0 +1,78 @@
+.mobileMenu {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+@media (min-width: 990px) {
+    .mobileMenu {
+        display: none;
+    }
+}
+
+.mobileMenu__label {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.mobileMenu__burger {
+    position: relative;
+    transition-timing-function: ease-in;
+}
+
+.mobileMenu__burger, .mobileMenu__burger::before, .mobileMenu__burger::after {
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    background-color: var(--accent);
+    border-radius: 5px;
+    transition: 500ms;
+}
+
+.mobileMenu__burger::before, .mobileMenu__burger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.mobileMenu__burger::before {
+    transform: translateY(-16px);
+}
+
+.mobileMenu__burger::after {
+    transform: translateY(16px);
+}
+
+.mobileMenu_open .mobileMenu__burger {
+    transform: translateX(-100px);
+    background-color: transparent;
+}
+
+.mobileMenu_open .mobileMenu__burger::before {
+    transform: rotate(45deg) translate(72px, -72px);
+}
+
+.mobileMenu_open .mobileMenu__burger::after {
+    transform: rotate(-45deg) translate(72px, 72px);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    background: #ccc;
+}
+
+.navigation__menu {
+    visibility: hidden;
+}
+
+.navigation__menu_open {
+    visibility: visible;
+}
