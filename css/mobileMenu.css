@@ -33,7 +33,7 @@
     height: 5px;
     background-color: var(--accent);
     border-radius: 5px;
-    transition: 500ms;
+    transition: 0.5s;
 }
 
 .mobileMenu__burger::before, .mobileMenu__burger::after {
@@ -51,14 +51,14 @@
 }
 
 .mobileMenu--open .mobileMenu__burger {
-    transform: translateX(-100px);
+    transform: translateX(100px);
     background-color: transparent;
 }
 
 .mobileMenu--open .mobileMenu__burger::before {
-    transform: rotate(45deg) translate(72px, -72px);
+    transform: rotate(45deg) translate(-72px, 72px);
 }
 
 .mobileMenu--open .mobileMenu__burger::after {
-    transform: rotate(-45deg) translate(72px, 72px);
+    transform: rotate(-45deg) translate(-72px, -72px);
 }
