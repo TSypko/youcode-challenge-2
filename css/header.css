@@ -73,7 +73,7 @@
 
 .header--clean {
     margin: 0px 0px;
-    content: ""
+    text-align: center;
 }
 
 .header--clean::before {
