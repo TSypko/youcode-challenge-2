@@ -18,13 +18,23 @@
 
 @media (max-width: 990px) {
     .nav {
-        padding: 20px 50px;
+        padding: 40px 80px;
+    }
+    .nav--onScroll {
+        background-color: var(--overlay);
+        padding: 20px 20px;
+        z-index: 2;
     }
 }
 
 @media (max-width: 460px) {
     .nav {
+        padding: 50px 50px;
+    }
+    .nav--onScroll {
+        background-color: var(--overlay);
         padding: 20px 20px;
+        z-index: 2;
     }
 }
 
