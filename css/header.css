@@ -32,8 +32,8 @@
 
 @media (max-width: 460px) {
     .header--about::before, .header--ticket::before {
-        top: -50%;
-        left: 15%;
+        top: -60%;
+        left: 21%;
     }
 }
 
